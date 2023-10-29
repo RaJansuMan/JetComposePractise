@@ -6,6 +6,7 @@ package com.example.jetComposePractise
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
@@ -16,6 +17,8 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
 import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.ExtendedFloatingActionButton
+import androidx.compose.material3.FloatingActionButton
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextField
@@ -28,6 +31,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.text.ExperimentalTextApi
 import androidx.compose.ui.text.SpanStyle
@@ -49,18 +53,18 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-//            Greeting1(name = "new func")
-//            Icon(painterResource(id =R.drawable.baseline_1k_plus_24 ),contentDescription = null, tint = Color.Yellow)
-//            Image(painterResource(id = R.drawable.baseline_1k_plus_24),contentDescription = null)
-//            TextField(value = "", onValueChange ={},label={} )
-//            FloatingActionButton(onClick = { /*TODO*/ }) {
-//                Icon(painter = painterResource(id = R.drawable.baseline_1k_plus_24), contentDescription = null, tint= Color.Blue)
-//
-//            }
-//            ExtendedFloatingActionButton(onClick = { /*TODO*/ }) {
-//                Text(text = "Extented Floating action button")
-//                Icon(painter = painterResource(id = R.drawable.baseline_1k_plus_24), contentDescription = null, tint = Color.Green)
-//            }
+            Greeting1(name = "new func")
+            Icon(painterResource(id =R.drawable.baseline_1k_plus_24 ),contentDescription = null, tint = Color.Yellow)
+            Image(painterResource(id = R.drawable.baseline_1k_plus_24),contentDescription = null)
+            TextField(value = "", onValueChange ={},label={} )
+            FloatingActionButton(onClick = { /*TODO*/ }) {
+                Icon(painter = painterResource(id = R.drawable.baseline_1k_plus_24), contentDescription = null, tint= Color.Blue)
+
+            }
+            ExtendedFloatingActionButton(onClick = { /*TODO*/ }) {
+                Text(text = "Extented Floating action button")
+                Icon(painter = painterResource(id = R.drawable.baseline_1k_plus_24), contentDescription = null, tint = Color.Green)
+            }
 
 
             Column(modifier = Modifier.fillMaxSize()) {
